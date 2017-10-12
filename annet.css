@@ -1,0 +1,134 @@
+body {
+	background-color: white;
+}
+
+.container{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto auto 80px;
+	margin: 0 auto;
+	max-width:1000px;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Alegreya Sans SC';
+}
+
+header{
+    grid-column: 1/5;
+}
+
+nav {
+	border: none;
+	width: 100%;
+	float: left;
+    grid-column: 1/5;
+}
+
+nav ul {
+	border: none;
+    list-style: none;
+	margin: 0 auto ;
+    padding: 0px;
+    overflow: hidden;
+	width: 100% ;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: none;
+	
+}
+
+nav ul li a {
+    display: inline-block;
+	width: 100px;
+	font-size:18px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	color: black;
+	background-color: white ;
+	border: none;
+    font-family: 'Alegreya Sans SC';
+}	
+
+
+nav ul li:hover a {
+	display: inline-block;
+	font-size:18px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	color: black;
+    text-shadow: 0px 3px 5px grey;
+}
+
+main{
+    grid-column: 1/4;
+    display: flex;
+    border-top: 1px solid black; 
+}
+
+article {
+    border: none;
+    padding: 1em;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bildemal{
+    width: 600px;
+    float: left;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+    
+aside{
+    display: block;
+    grid-column: 4/5;
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 1em;
+    background-color: palegoldenrod;
+}
+
+
+footer {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 3px;
+	padding-top: 30px;
+	padding-right: 18px;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: right;
+    font-family: 'Alegreya Sans SC';
+    font-size: 18px;
+	grid-column: 1/5;
+}
+
+footer:hover a{
+    text-decoration: none;
+	color: black;
+    text-shadow: 0px 3px 5px grey;
+}
+
+a{
+    text-decoration: none;
+	color: black;
+}
